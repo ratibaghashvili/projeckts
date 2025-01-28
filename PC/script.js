@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const html = document.documentElement;
     
-    // Prevent scrolling - multiple approaches for better mobile support
+    
     function disableScroll() {
-        // Add styles to both html and body
+        
         html.style.overflow = 'hidden';
         html.style.height = '100%';
         body.style.overflow = 'hidden';
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.style.width = '100%';
     }
 
-    // Enable scrolling
+    
     function enableScroll() {
         html.style.overflow = '';
         html.style.height = '';
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         body.style.width = '';
     }
 
-    // Initially disable scroll
+    
     disableScroll();
     
-    // Hide loading screen and enable scrolling after 2 seconds
+    
     setTimeout(() => {
         loadingScreen.classList.add('hide');
         setTimeout(() => {
